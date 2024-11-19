@@ -1,0 +1,66 @@
+.header__ether-img{
+    height: 46px;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    top: 60px;
+    border-radius: 15px;
+    margin: 15px 15px 0px 15px;
+    background-color: #1e1e1e;
+
+    &__links {
+        display: flex;
+
+    }
+    &__links-item {
+        font-weight: 100;
+    }
+
+    &__links-link {
+        display: block;
+        font-size: 13px;
+        margin-top: 1px;
+
+        &:before {
+            color: #ffd545 !important;
+            content: "|";
+            padding: 0 5px;
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+}
+
+.header__links-item:nth-child(2) .header__links-link:before,
+.header__links .first:before {
+  content: "";
+  padding-left: 0;
+}
+
+#verticalSeperator {
+    border-left: solid;
+    width: 1px;
+    height: 20px;
+}
+.total__rating {
+    font-size: 12px;
+    color: #facc15;
+
+}
+
+.header__ether-info-title {
+    color: white;
+}
+
+#headerLinks {
+    color: #fff;
+    display: flex;
+    padding-right: 40px;
+}
